@@ -1,0 +1,3 @@
+C:/Users/X6CSAMAL/Downloads/FaceBoxes-ONNX/CMakeFiles/main.dir
+C:/Users/X6CSAMAL/Downloads/FaceBoxes-ONNX/CMakeFiles/ALL_BUILD.dir
+C:/Users/X6CSAMAL/Downloads/FaceBoxes-ONNX/CMakeFiles/ZERO_CHECK.dir
