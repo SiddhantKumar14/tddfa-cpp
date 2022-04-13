@@ -15,7 +15,11 @@ int main(int argc, char** argv)
     Mat clr = imread(image_path,IMREAD_COLOR);
     Mat image;
     Mat conf;
-    vector<Rect> box; // assign [476 x 479 from (312, 119)] 
+
+    Rect box = Rect(476, 479, 312, 119);
+    vector<Rect> boxes;
+    boxes.push_back(box);
+
     resize(clr, image, Size(1080, 720), 1.0, 1.0);
 
     vector<vector<float>> m_sizes = { {32, 64, 128}, {256}, {512} };
@@ -24,7 +28,7 @@ int main(int argc, char** argv)
 
     Config config = { 0.8f, 0.3f, model_path };
     TDDFA tddfa(config);
-    // tddfa.detect(image, box, conf);
+    tddfa.detect(image, boxes, conf);
 
         /*
         ParamConfig config = {0.8f, 0.3f, model_path};
