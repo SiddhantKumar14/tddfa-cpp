@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-struct ParamConfig
+struct Config
 {
     float confThreshold;
     float nmsThreshold;
@@ -17,7 +17,7 @@ struct ParamConfig
 class TDDFA
 {
 public:
-    TDDFA(ParamConfig& config);
+    TDDFA(Config& config);
     ~TDDFA();
     void detect(Mat& image, vector<Rect> box, Mat& conf);
 

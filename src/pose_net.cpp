@@ -1,7 +1,7 @@
 
 #include "pose_net.h"
 
-TDDFA::TDDFA(ParamConfig &config)
+TDDFA::TDDFA(Config &config)
 {
     this->confThreshold = config.confThreshold;
     this->nmsThreshold = config.nmsThreshold;
